@@ -21,7 +21,7 @@ public class MinMaxAvg
                 numInput = Integer.parseInt(GetInput("\n\nPlease enter a number between -1,000,000 and 1,000,000"));
                 if (CheckNumSize(numInput))
                 {
-                    System.out.println("Number does not comply\n");
+                    System.out.println("Number does not meet the requirements\n");
                 }
             } while(CheckNumSize(numInput));
             inputList.add(numInput);
@@ -45,7 +45,7 @@ public class MinMaxAvg
                    System.exit(0);
                } else
                {
-                   System.out.println("Unrecognised input :(");
+                   System.out.println("Unknown input :(");
                    error = true;
                }
             } while(error);
